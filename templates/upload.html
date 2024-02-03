@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Téléchargement de fichiers CSV</title>
+</head>
+<body>
+    <h1>Télécharger des fichiers CSV</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data" style="display:flex; flex-direction: column;width:max-content;row-gap: 24px;">
+        <input type="file" name="file[]" accept=".csv" multiple="multiple" required>
+        <input type="text" name="filename" placeholder="Nom du fichier" required>
+        <input type="submit">
+    </form>
+</body>
+</html>
