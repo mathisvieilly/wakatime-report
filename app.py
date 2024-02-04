@@ -23,7 +23,7 @@ def upload_files():
 
             # Add the data to the dictionary with the filename as the key
             csv_arrays[modified_filename] = data
-    
+
     # Write the data to an Excel file
     write_to_excel(csv_arrays, final_filename)
 
@@ -31,7 +31,7 @@ def upload_files():
     delete_files = [file for file in csv_arrays.keys()]
     for file in delete_files:
         os.remove(file)
-    
+
     return "Files downloaded and WakaTime reports generated successfully!"
 
 if __name__ == '__main__':

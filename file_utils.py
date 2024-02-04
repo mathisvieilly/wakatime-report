@@ -6,10 +6,10 @@ def valid_wakatime_format(file):
         line = bytes_lines[2].decode('utf-8').strip()
         line += ',Total\n'
         bytes_lines[2] = line.encode('utf-8')
-    
+
     modified_filename = file.filename.replace('.csv', '_modifie.csv')
-    
+
     with open(modified_filename, 'w', encoding='utf-8') as modified_file:
         modified_file.writelines([line.decode('utf-8') for line in bytes_lines])
-    
+
     return modified_filename

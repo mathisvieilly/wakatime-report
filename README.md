@@ -18,6 +18,7 @@ To run the project (make sure you're using your current version of Python, mine 
 
 ```bash
 cd wakatime-report
+pip3 install -r requirements.txt
 python3.11 app.py
 ```
 
